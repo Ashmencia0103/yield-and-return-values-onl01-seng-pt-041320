@@ -1,11 +1,11 @@
 require 'pry'
 
 def hello(array)
-  new_array = []
   i = 0
+  collection = []
   while i < array.length
     binding.pry
-    yield(array[i])
+    collection << yield(array[i])
     i += 1
   end
   new_array
